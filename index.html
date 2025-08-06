@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Corporate Investigations Program Overview&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Tailwind CSS CDN --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f3f4f6; /* Light gray background */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #374151; /* Dark gray text */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.75rem; /* rounded-xl */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.875rem; /* text-3xl */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700; /* font-bold */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #1f2937; /* Gray-900 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.subsection-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem; /* text-xl */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600; /* font-semibold */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #374151; /* Gray-700 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.collapsible-header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e5e7eb; /* Gray-200 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.5rem; /* rounded-lg */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #1f2937;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.collapsible-header:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #d1d5db; /* Gray-300 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.collapsible-content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 3px solid #60a5fa; /* Blue-400 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9fafb; /* Gray-50 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.arrow {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.arrow.rotated {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: rotate(90deg);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Apply justify to main text content */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-card p,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.collapsible-content p,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.collapsible-content ul,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.collapsible-content ol {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: justify;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list-style-type: disc;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ol {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list-style-type: decimal;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>li {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Timeline specific styles */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.timeline-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: auto; /* Allows horizontal scrolling if content overflows */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 1.5rem; /* Space between timeline phases */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.timeline-phase {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 1 0 280px; /* Adjusted flex-basis to make it slightly thinner */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f0f4f8; /* Light blue-gray background */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); /* subtle inner shadow */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #d1d5db; /* light border */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.timeline-phase-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.125rem; /* text-lg */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #1f2937;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center; /* Keep titles centered */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.timeline-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.875rem; /* text-sm */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4b5563;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.timeline-item:last-child {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Key Takeaway box style */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.key-takeaway {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e0f7fa; /* Light cyan, optimistic */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #00bcd4; /* Cyan border */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #006064; /* Darker cyan text */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.key-takeaway h4 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem; /* text-xl */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700; /* font-bold */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #006064; /* Darker cyan text */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.key-takeaway p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #006064;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* AI Integration specific cards */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ai-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e8f5e9; /* Light green, positive/growth */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #a5d6a7; /* Muted green border */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ai-card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2e7d32; /* Darker green for title */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ai-card p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #388e3c; /* Green text */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: justify;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Header Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header class="text-center py-8 bg-white rounded-xl shadow-md mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-4xl font-extrabold text-gray-900"&gt;Internal Audit Investigations Program&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-lg text-gray-600 mt-2"&gt;A Framework for Integrity and Confidence&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Introduction Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="section-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;1. Introduction&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>This document outlines the framework for establishing and maturing the Internal Audit Investigations Program. While operating as an integral part of Uber's broader corporate investigations framework, this program also adheres strictly to IIA standards of conduct, reflecting its unique position within the Internal Audit team.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-700 leading-relaxed mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>A key focus of this program is to evolve from a primarily reactive stance to a more balanced and proactive approach to identifying and addressing misconduct. This involves enhancing our case intake mechanisms through improved collaboration with key internal stakeholders and expanding automated monitoring systems. Furthermore, we aim to establish a robust and systematic process for collecting, analysing, and acting upon identified root causes and issues, ensuring effective and consistent remediation.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-700 leading-relaxed mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Leveraging emerging technologies, particularly AI, is central to these improvements. AI tools are being explored for tasks such as automated contract review and comprehensive report reading, promising to significantly enhance our investigative capabilities and efficiency.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-700 leading-relaxed mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>The Internal Audit Investigations Program is essential for safeguarding company assets, fostering a strong culture of integrity, and reinforcing confidence across the organisation.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Key Components Section (Collapsible) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="section-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;2. Key Components of the Program&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 2.1 Governance --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="collapsible-header" onclick="toggleCollapsible('governance')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;2.1. Governance&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="arrow" id="arrow-governance"&gt;&amp;#9658;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="governance" class="collapsible-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;The Internal Audit investigations program is dual-governed. It is part of Uber’s wider corporate investigations program; but so long as it sits within the Internal Audit team, it is a function carried out by Internal Audit and therefore subject to IIA standards of conduct.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4 class="subsection-title"&gt;Key requirements of Uber’s investigations program are:&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-6 text-gray-700"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;General conduct: Investigations are conducted in a fair and neutral manner&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Planning: Investigations are adequately scoped and planned&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Findings: Investigation findings must be based on information that is relevant, reliable, and reasonably sufficient to support the conclusions and/or recommendations&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4 class="subsection-title"&gt;Key features of the IIA standards that apply to investigations are:&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-6 text-gray-700"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ethics and professionalism: Internal auditors must demonstrate integrity, maintain objectivity, demonstrate competency, exercise due professional case, and maintain confidentiality&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Planning: A properly resourced and positioned internal audit function develops and implements a strategy to support the organisation’s success&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Performance: Performing internal audit services requires internal auditors to effectively plan engagements, conduct the engagement work to develop findings and conclusions, and collaborate with management to identify recommendations and/or action plans that address the findings&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Root cause analysis: When evaluating potential engagement findings, internal auditors must collaborate with management to identify the root causes where possible&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Though part of the Finance org and with no direct management line through the Chief Ethics, Compliance and Security Officer who owns the overall investigations program, the Internal Audit investigations program must ensure conformance with both sets of standards, and close collaboration with counterpart personnel across the investigations portfolio, as well as within Internal Audit.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 2.2 Playbook and Procedures --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="collapsible-header" onclick="toggleCollapsible('playbookProcedures')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;2.2. Playbook and Procedures&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="arrow" id="arrow-playbookProcedures"&gt;&amp;#9658;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="playbookProcedures" class="collapsible-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Investigation standards for the overall Uber investigations program are laid out in the Internal Investigations Protocol (“the Protocol”), which resides in the library of Uber’s case management system I-Sight.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Investigation standards for the Internal Audit investigations program, as well as being subject to the Protocol, are laid out in the &lt;a href="https://docs.google.com/document/d/1ofr6LA6n1QhkkQIzUxkQ2YzQjDmcu2JsJNruFdslrME/edit?tab=t.0" target="_blank" class="text-blue-600 hover:underline"&gt;Internal Audit Investigations Playbook&lt;/a&gt; (“the Playbook”).&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;The IA Investigations Lead will be responsible for reviewing and updating the Playbook on a quarterly basis.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 2.3 Case Intake --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="collapsible-header" onclick="toggleCollapsible('caseIntake')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;2.3. Case Intake&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="arrow" id="arrow-caseIntake"&gt;&amp;#9658;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="caseIntake" class="collapsible-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="key-takeaway"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4&gt;Key Takeaway&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;To enhance proactive detection, the program needs improved collaboration with key internal teams and an expansion of automated transaction monitoring systems.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;&lt;span class="underline"&gt;Present state&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;The Internal Audit Investigations program is currently largely reactive, and (with some exceptions) dependent upon integrity hotline reports.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;&lt;span class="underline"&gt;Desired future state&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;It is intended to develop the program towards a more balanced proactive / reactive footing.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;According to the ACFE Report To The Nations 2024, while tips are the leading single cause of organisational fraud discovery, they are responsible for fewer than half of all detections overall. Other high-impact detection methods are internal audit, management review, document examination, account reconciliation, and by accident.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;In some recent cases, other teams (including Strategic Sourcing and Strategic Finance) have developed concerns about potential fraud matters, but have not consulted investigations personnel (or have consulted investigations team months after the fact). Ongoing collaboration and outreach to stakeholders in key teams, including Strategic Sourcing and Strategic Finance, may improve the pipeline of information and lead to more proactive investigations.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Ongoing transaction monitoring in fields such as Travel and Expense and vendor transactions does take place throughout Uber, but Internal Audit has very little visibility over it, and much of it is geared primarily towards budgetary compliance and not necessarily with fraud and misconduct in mind. There may be opportunities to improve, re-focus, and build upon existing monitoring mechanisms to identify investigation opportunities. One example: based on recent cases, use an AI reader across Uber’s vendor contract repository to identify contracts that contain provisions for vendors to hold pots of Uber’s money off-book.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Data is available about the quantity and type of ethics hotline reports per country. This data may be leveraged to identify countries where Uber has large numbers of employees, but low engagement with the hotline. These countries may be suitable for further proactive engagement including site visits and discussions with personnel on high-risk teams. Further ways to analyse and leverage investigation data will also be explored with the Ethics and Compliance team.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Regional Ethics and Compliance teams go so far as to conduct on-site roadshows to proactively engage with personnel in under-reporting areas. The IA investigations lead will discuss this activity with regional leads, and explore the potential upside of conducting similar activities in parallel.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;&lt;span class="underline"&gt;Action points&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-6 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Identify key stakeholders within StratFin and StratSourcing for periodic ongoing engagement&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Work with T&amp;E team to gain better visibility over travel and expense transaction monitoring&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Identify opportunities for improvement and and expansion of the same&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Work with StratFin and StratSourcing to gain better visibility over vendor transaction monitoring&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Identify opportunities for improvement and expansion of the same&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Work with legal (primarily Kelly Schulz) to explore use of AI in contracts (and develop other opportunities)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Work with Kelly Schulz and Nell Glazener-Cooney to gather and analyse data relating to hotline reports around the world&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Work with Samantha Boel and others to explore the benefits of on-site roadshows and other proactive outreach&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 2.4 Collaboration --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="collapsible-header" onclick="toggleCollapsible('collaboration')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;2.4. Collaboration&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="arrow" id="arrow-collaboration"&gt;&amp;#9658;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="collaboration" class="collapsible-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Ongoing collaboration with other investigation teams is both a requirement of Uber’s Internal Investigations Protocol, and a matter of general good sense.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Meeting cadences specifically stipulated in the Protocol, to be attended by Alex, include&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-6 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Bi-weekly Investigative Leads meetings (30 minutes, every 2 weeks)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Regional leads meetings (1 hour, every quarter, x4 for the four mega-regions)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Financial Risk Management meetings (1 hour, every quarter)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Other meetings on an as-needed basis, particularly when Internal Audit jointly investigates cases with other teams&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;This amounts to a minimum of 8 hours of meetings per quarter, plus the same again to account for preparation and recording time.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Key stakeholders to be prioritised for ongoing collaboration efforts at this stage are Kevin White (the overall owner of the investigation program), and Kelly Schulz (the lead for Ethics and Compliance investigations and a key component of the program overall).&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Additionally, recent cases have indicated a disconnect between Internal Audit and some other investigative teams, particularly ER and HR; and a lack of mutual visibility and understanding of differing investigative scopes and timelines. Better collaboration and clearer expectation-setting is a priority going forward.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 2.5 Technology and Tools --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="collapsible-header" onclick="toggleCollapsible('technologyTools')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;2.5. Technology and Tools&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="arrow" id="arrow-technologyTools"&gt;&amp;#9658;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="technologyTools" class="collapsible-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Key tools and technology that will be incorporated into the Internal Audit investigations program are:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-6 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;I-Sight&lt;/strong&gt; Uber’s case management system. This system is currently used for case intake and outcome recording, but may soon be subject to an RFP. Alex will stay close to this process and ensure that whatever solution is eventually chosen (I-Sight or otherwise) is fit for Internal Audit’s purpose.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Google Suite&lt;/strong&gt; for spreadsheet-based analysis and report writing&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Asana&lt;/strong&gt; for maintaining an &lt;a href="https://app.asana.com/1/180234584339/project/1210767955936808/list/1210768124496111" target="_blank" class="text-blue-600 hover:underline"&gt;internal dashboard&lt;/a&gt; of open cases and their status&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;ServiceNow&lt;/strong&gt; (likely soon to be replaced with AuditBoard) for the investigation program’s updated remediation component (see below)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Other internal Uber tools&lt;/strong&gt; (such as Concur) as laid out in the &lt;a href="https://docs.google.com/document/d/1ofr6LA6n1QhkkQIzUxkQ2YzQjDmcu2JsJNruFdslrME/edit?tab=t.0" target="_blank" class="text-blue-600 hover:underline"&gt;Internal Audit Investigations Playbook&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;AI tools&lt;/strong&gt; for identified tasks including automated contract review and report reading (currently under discussion)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 2.6 Root cause analysis and remediation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="collapsible-header" onclick="toggleCollapsible('rootCauseRemediation')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;2.6. Root cause analysis and remediation&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="arrow" id="arrow-rootCauseRemediation"&gt;&amp;#9658;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="rootCauseRemediation" class="collapsible-content hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="key-takeaway"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4&gt;Key Takeaway&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;A more systematic approach is needed to collect, analyse, and act upon root causes and identified issues from investigations to ensure effective remediation.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;&lt;span class="underline"&gt;Present state&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;Although conducting root cause analysis, and remediating identified issues, are expectations across Uber’s investigation teams, in practice these activities are inconsistently and haphazardly carried out.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;&lt;span class="underline"&gt;Desired future state&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;The Internal Audit investigations lead is uniquely positioned to take on a pivotal role in the analysis and remediation of identified issues. Identifying those issues, achieving buy-in from responsible stakeholders, developing action plans, assigning owners, and tracking progress against set milestones are all well within ordinary Internal Audit activities. Those activities, and the processes and mechanisms that underpin them, require very little tweaking to be put to investigative use.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;The missing link in the process as it exists today is a systematic way of gathering the right data from investigations, extracting root causes, and collating and prioritising remediation activity upon which those processes can be brought to bear. It is proposed that the IA investigations lead takes primary responsibility for this part of the process.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;As a starting point, it is proposed that investigation reports be used as the primary documentary repository of root cause analysis. The extent to which this analysis is properly conducted in cases where it is warranted may be reviewed as this project develops. Whether any coaching or reinforcement in this area is required may be discussed with the leadership of the investigation teams as and when the need arises. Those reports should be read and digested - either by the IA investigations lead or, ideally and if the technology is sufficiently capable and reliable, by AI (or by some combination of the two) - and persistent root causes and opportunities for remediation drawn out. These may be discussed and agreed with other investigation leads on already-existing meeting cadences. Once agreed for action, the IA investigations lead will be responsible for leveraging Internal Audit processes for developing and monitoring action plans, and likewise reporting back to investigations leadership.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-medium text-gray-800"&gt;&lt;span class="underline"&gt;Action points&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-6 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;IA investigations lead to secure buy-in for this suggested remediations process from investigations leadership&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;IA investigations lead to secure support from Internal Audit leadership&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;IA investigations lead and Ethics and Compliance investigations lead to devise a mechanism for collecting, reviewing and prioritising remediation actions (whether using AI or otherwise) from investigation reports&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Key Stakeholder Status Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="section-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;3. Key Stakeholder Status&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- GREEN STATUS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-green-100 rounded-lg border border-green-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;Kelly Schulz (Director, Ethics &amp; Compliance Investigations)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Key component of the investigations program, owner of the ethics hotline, point person for legal advice.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-green-700"&gt;Ongoing collaboration in effect.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.4. Collaboration' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- YELLOW STATUS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-yellow-100 rounded-lg border border-yellow-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;Kevin White (Director, Global Investigations)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Owner of the overall investigations program.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-yellow-700"&gt;Preliminary call to discuss remediation options set up.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.4. Collaboration' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-yellow-100 rounded-lg border border-yellow-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;Nell Glazener-Cooney (Sr. Program Manager, Ethics &amp; Compliance Investigations)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Key administrator of the ethics hotline.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-yellow-700"&gt;Identified but in progress.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.3. Case Intake' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-yellow-100 rounded-lg border border-yellow-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;Justin Reyhl (Sr T&amp;E Manager, Cards &amp; Expense)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Point of contact for Travel and Expense transaction monitoring.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-yellow-700"&gt;Identified but in progress.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.3. Case Intake' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-yellow-100 rounded-lg border border-yellow-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;ER (Employee Relations)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Priority to improve collaboration and mutual understanding of investigative scopes.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-yellow-700"&gt;Identified but in progress.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.4. Collaboration' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-yellow-100 rounded-lg border border-yellow-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;HR (Human Resources)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Priority to improve collaboration and mutual understanding of investigative scopes.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-yellow-700"&gt;Identified but in progress.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.4. Collaboration' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-yellow-100 rounded-lg border border-yellow-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;Samantha Boel (Director, Ethics &amp; Compliance, EMEA)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;To discuss on-site roadshows and other pro-active engagement with high-risk personnel.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-yellow-700"&gt;Identified but in progress.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.3. Case Intake' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- RED STATUS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-red-100 rounded-lg border border-red-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;Strategic Sourcing&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Focus on improving information pipeline for proactive investigations.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-red-700"&gt;Stakeholders not yet identified.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.3. Case Intake' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 bg-red-100 rounded-lg border border-red-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-gray-800"&gt;Strategic Finance&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;Focus on improving information pipeline for proactive investigations.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-red-700"&gt;Stakeholders not yet identified.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-gray-500 mt-2"&gt;See '2.3. Case Intake' for more details&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- New Section 4: Action Plan &amp; Timeline --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="section-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;4. Action Plan &amp; Timeline&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-700 leading-relaxed mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>This timeline provides a high-level overview of the planned phases and key action points for the Internal Audit Investigations Program.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="timeline-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Phase 1: Q3 2025 - Foundation &amp; Initial Outreach --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="timeline-phase"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="timeline-phase-title"&gt;Phase 1: Q3 2025&lt;br&gt;Foundation &amp; Initial Outreach&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Identify key stakeholders within StratFin and StratSourcing for periodic ongoing engagement.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Work with Kelly Schulz and Nell Glazener-Cooney to gather and analyse data relating to hotline reports around the world.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Work with legal (primarily Kelly Schulz) to explore use of AI in contracts (initial discussion/scoping).&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Remain close to potential I-Sight replacement RFP.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Phase 2: Q4 2025 - Monitoring &amp; Visibility Enhancement --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="timeline-phase"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="timeline-phase-title"&gt;Phase 2: Q4 2025&lt;br&gt;Monitoring &amp; Visibility Enhancement&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Work with T&amp;E team to gain better visibility over travel and expense transaction monitoring.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Identify opportunities for improvement and expansion of T&amp;E monitoring.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Work with StratFin and StratSourcing to gain better visibility over vendor transaction monitoring.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Identify opportunities for improvement and expansion of vendor monitoring.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Working with regional E&amp;C leads to explore proactive engagement.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Phase 3: Q1 2026 and beyond - Advanced Initiatives &amp; Integration --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="timeline-phase"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="timeline-phase-title"&gt;Phase 3: Q1 2026 and beyond&lt;br&gt;Advanced Initiatives &amp; Integration&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Develop other opportunities identified from AI in contracts exploration.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Implement improvements and expansions for T&amp;E and vendor monitoring.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timeline-item"&gt;Proactive engagement including site visits and discussions with personnel on high-risk teams in identified countries.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- New Section 5: AI Integration &amp; Future Capabilities --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="section-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;5. AI Integration &amp; Future Capabilities&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>The Internal Audit Investigations Program is committed to leveraging AI to significantly enhance its capabilities and efficiency. AI is envisioned to play a pivotal role in transforming both proactive detection and systematic remediation processes.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ai-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Automated Contract Review&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>AI readers will be explored to analyse Uber’s vendor contract repository. This will help identify contracts containing provisions for vendors to hold Uber’s money off-book, enabling more proactive fraud detection.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ai-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Enhanced Report Reading and Analysis&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>AI tools are being considered to read and digest investigation reports. This will facilitate the extraction of persistent root causes and opportunities for remediation, streamlining the process of collating and prioritising remediation activities.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ai-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Data-Driven Proactive Engagement&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>AI can assist in analysing ethics hotline report data to identify trends and under-reporting areas. This data will inform targeted proactive engagement, such as on-site roadshows and discussions with high-risk personnel in specific countries.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-700 leading-relaxed mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>These AI-driven initiatives aim to move the program towards a more balanced proactive/reactive footing, ultimately strengthening asset safeguarding, fostering integrity, and reinforcing confidence across the organisation.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// JavaScript for collapsible sections</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function toggleCollapsible(id) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const content = document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const arrow = document.getElementById(`arrow-${id}`);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (content.classList.contains('hidden')) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>content.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>content.classList.add('block');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>arrow.classList.add('rotated');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>content.classList.remove('block');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>content.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>arrow.classList.remove('rotated');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
